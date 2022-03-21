@@ -22,7 +22,7 @@ const schema = makeExecutableSchema({ typeDefs, resolvers })
 app.use('/api', graphqlHTTP({
   schema: schema,
   rootValue: resolvers,
-  graphiql: true 
+  graphiql: true
 }))
 
 app.listen(port, () => {
